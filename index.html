@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-BaseProyect2</title>
+    <script type="module" src="./src/app.js "></script>
+    <script type="module" src="./src/module.js"></script>
+    <link rel="stylesheet " href="./styles/style.css ">
+    <link rel="stylesheet " href="./styles/normalize.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body id="body">
+    <header class="header">
+        <img src="./resources/cad-logo-88x66-v3.png" alt="logoCad">
+
+        <h1 class="textoTitulo">Welcome To Cadillac</h1>
+    </header>
+
+
+    <main>
+        <video autoplay muted loop id="myVideo">
+            <source src="./resources/myvideo.mp4" type="video/mp4">
+            <!-- Rammstein Keine Lust UMG_MK (en representación de Universal Music Domestic Division, a division of Universal Music GmbH);
+                 ASCAP, Muserk Rights Management, CMRRA, Kobalt Music Publishing, SODRAC, LatinAutor - UMPG, UMPG Publishing, UMPI, União Brasileira de Compositores,
+                 UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, LatinAutor, LatinAutorPerf y 15 sociedades de derechos musicales -->
+        </video>
+    </main>
+
+
+    <footer>
+        <div class="contenedor">
+            <div class="contenido__texto">
+                <p>
+                    Bienvenidos a nuestra página Web, en ella, podrás cargar modelos 3D de vehículos y poder editar las texturas
+                </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-car" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0de98" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="7" cy="17" r="2" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                </svg>
+
+                <div class="barra">
+
+                    <nav class="navegacion">
+                        <a href="#" class="navegacion__contenido" id="btn1">Cargar Modelos 3D</a>
+                    </nav>
+                </div>
+                <span>Trabajo Elaborado por Daniel Cuevas y Juan Manuel Viracacha</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="contentModels">
+        <div class="backBtn" id="backBtn">Atrás</div>
+        <div class="btnOptionModels custom" id="modelOne">
+            <img class="imagen" src="./resources/imagen1.jpeg" alt="img1">
+        </div>
+        <div class="btnOptionModels custom" id="modelTwo">
+            <img class="imagen" src="./resources/imagen2.jpg" alt="img2">
+        </div>
+        <div class="btnOptionModels custom" id="modelThree">
+            <img class="imagen" src="./resources/imagen3.jpeg" alt="img3">
+        </div>
+        <div class="btnOptionModels custom" id="modelFour">
+            <img class="imagen" src="./resources/imagen4.jpg" alt="img4">
+        </div>
+    </div>
+    <div id="contentTexture">
+        <div class="btnOptionTexture custom" id="texture1">
+            <div class="title">Textura 1</div>
+        </div>
+        <div class="btnOptionTexture custom" id="texture2">
+            <div class="title">Textura 2</div>
+        </div>
+        <div class="btnOptionTexture custom" id="texture3">
+            <div class="title">Textura 3</div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>

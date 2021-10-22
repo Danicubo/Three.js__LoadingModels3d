@@ -1,0 +1,202 @@
+    /* Paleta De Colores */
+    
+     :root {
+        --negro: black;
+        --negroClaro: #5E5A60;
+        --blanco: white;
+        --gris: #DAD8DB;
+        --amarilloOscuro: #f0de98;
+        --amarilloOscuro2: #f0de98bd;
+        --azulClaro: #A9CCE3;
+    }
+    /* Variables Importantes y globales */
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    
+    html {
+        box-sizing: border-box;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    /* Globales */
+    
+    body {
+        background-color: var(--negro);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: var(--blanco);
+    }
+    
+    p {
+        color: var(--blanco);
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        margin: 1rem;
+        width: 9%;
+        height: 5%;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 1.5;
+    }
+    
+    span {
+        font-size: 0.7rem;
+    }
+    /* Header */
+    
+    .header {
+        display: flex;
+        gap: 20rem;
+        background-color: var(--amarilloOscuro2);
+        color: var(--negro);
+    }
+    
+    .textoTitulo {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        text-shadow: 16px 9px 7px rgba(0, 0, 0, 0.62);
+    }
+    /* myVideo */
+    
+    #myVideo {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    /* Footer Content */
+    /* Navegación */
+    
+    .navegacion {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .navegacion__contenido {
+        background-color: var(--amarilloOscuro);
+        color: var(--negro);
+        width: 25%;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    
+    .navegacion__contenido:hover {
+        transform: scale(1.05)
+    }
+    
+    .contenido__texto {
+        text-align: center;
+    }
+    
+    .backBtn {
+        background-color: var(--amarilloOscuro);
+        color: var(--negro);
+        width: 10rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .backBtn:hover {
+        transform: scale(1.02);
+    }
+    /* Content Models */
+    
+    #contentModels {
+        display: flex;
+        position: fixed;
+        background-color: var(--negro);
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        z-index: 2;
+        width: 17.29999rem;
+        height: 100vh;
+    }
+    
+    #contentModels .btnOptionModels .imagen {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .btnOptionModels {
+        width: 15vw;
+        height: 10rem;
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .btnOptionModels:hover {
+        transform: scale(1.05);
+    }
+    /* Content Texture */
+    
+    body #contentTexture {
+        display: flex;
+        position: fixed;
+        background: #ffffff00;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        z-index: 2;
+        width: 80vw;
+        height: 10vh;
+    }
+    
+    body #contentTexture .btnOptionTexture {
+        background-color: var(--amarilloOscuro);
+        color: var(--negro);
+        width: 20%;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        cursor: pointer;
+    }
+    
+    .btnOptionTexture:hover {
+        transform: scale(1.02);
+    }
