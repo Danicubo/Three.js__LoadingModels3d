@@ -1,4 +1,4 @@
-import { changeModel1, changeModel2, changeModel3, changeModel4, changeTexture1, changeTexture2, changeTexture3 } from 'C:/Users/Daniel/Desktop/MainCompuGrafica/6-BaseProyect2/src/app.js';
+import { changeModel1, changeModel2, changeModel3, changeModel4, changeTexture1, changeTexture2, changeTexture3 } from '../src/app.js';
 
 
 /* Variables Globales */
